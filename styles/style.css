@@ -379,11 +379,13 @@ button:focus,
 
 .save-button {
     position: relative;
-    display: flex;
-    place-items: center;
+    display: grid;
+    grid-template-columns: min-content 1fr;
     justify-content: center;
+    align-items: center;
     gap: 8px;
     border: var(--border-settings);
+    text-wrap: nowrap;
     overflow: hidden;
     background-color: white;
     inline-size: clamp(309px, calc(309px + 33 * (100vw - 375px) / 1065), 339px);
@@ -441,6 +443,7 @@ button:focus,
 
 @media (width <=375px) {
     .save-button {
+        display: flex;
         flex-direction: column;
         place-items: center;
         justify-content: center;
