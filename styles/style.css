@@ -374,19 +374,18 @@ button:focus,
     margin-top: 49px;
     margin-bottom: 100px;
     text-align: center;
-    background-color: none;
+    background-color: transparent;
 }
 
 .save-button {
     position: relative;
-    display: grid;
-    grid-template-columns: min-content 1fr;
+    display: flex;
+    place-items: center;
     justify-content: center;
-    align-items: center;
     gap: 8px;
     border: var(--border-settings);
-    text-wrap: nowrap;
     overflow: hidden;
+    text-wrap: wrap;
     background-color: white;
     inline-size: clamp(309px, calc(309px + 33 * (100vw - 375px) / 1065), 339px);
     block-size: clamp(55px, calc(84px - 29 * (100vw - 375px) / 1065), 84px);
@@ -443,7 +442,6 @@ button:focus,
 
 @media (width <=375px) {
     .save-button {
-        display: flex;
         flex-direction: column;
         place-items: center;
         justify-content: center;
