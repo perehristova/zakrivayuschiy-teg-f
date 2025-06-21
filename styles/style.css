@@ -321,7 +321,7 @@ button:focus,
 .card__like-button {
   position: relative;
   gap: 12px;
-  inline-size: 130px;
+  width: 130px;
   border: var(--border-settings);
   vertical-align: bottom;
   overflow: hidden;
@@ -367,9 +367,11 @@ button:focus,
 
 .container__button {
   justify-items: center;
+  width: 100%;
   margin-top: 49px;
   margin-bottom: 100px;
   text-align: center;
+  background-color: none;
 }
 
 .save-button {
@@ -379,7 +381,7 @@ button:focus,
   justify-content: center;
   gap: 8px;
   border: var(--border-settings);
-  padding: 0;
+  overflow: hidden;
   background-color: white;
   inline-size: clamp(309px, calc(309px + 33 * (100vw - 375px) / 1065), 339px); 
   block-size: clamp(55px, calc(84px - 29 * (100vw - 375px) / 1065), 84px);
@@ -418,6 +420,7 @@ button:focus,
   position: relative;
   border: var(--border-settings);
   padding: 0;
+  overflow: hidden;
   inline-size: clamp(247px, calc(247px + 46 * (100vw - 375px) / 1065), 293px);
   block-size: 38px;
   background-color: inherit;
