@@ -21,7 +21,7 @@
     background-attachment: fixed;
     min-inline-size: 320px;
     min-block-size: 100dvb;
-    font-variation-settings: 'wdth' var(--weight-normal), 'wdth' var(--weight-bold);
+    font-variation-settings: 'wdth' var(--weight-normal, 400);
 }
 
 /* HEADER */
@@ -95,6 +95,7 @@
 .card__title {
     border-bottom: var(--border-settings);
     padding: 5px 10px;
+    font-variation-settings: 'wdth' var(--weight-bold, 700);
 }
 
 .card__container-image {
