@@ -1,1 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --accent-font: 'PressStart2P';
+  --main-font: 'Inter-Variable';
+  --accent-font-size: 14px;
+  --main-font-size: 18px;
+  --weight-normal: 400;
+  --weight-bold: 700;
+  --accent-size-sub-title: clamp(14px, calc(14px + 9 * (100vw - 375px) / 1065), 23px);
+  --accent-size-title: clamp(49px, calc(49px + 16 * (100vw - 375px) / 1065), 65px);
+  --container-size: clamp(375px, calc(375px + 325 * (100vw - 375px) / 1065), 700px);
+  --margin-inline: clamp(0px, calc(0px + 370 * (100vw - 375px) / 1065), 370px);
+  --margin-box: 100px;
+  --padding-inline: clamp(14px, calc(14px + 106.5 * (100vw - 375px) / 1065), 120.5px);
+  --padding-box: clamp(120px, calc(120px + 8 * (100vw - 375px) / 1065), 128px);
+  --color-label: rgb(255, 255, 255, 0.6);
+  --contour-color: black;
+  --animation-fill-color: #FF0000;
+  --border-settings: 2px solid black;
+  --bg-color: white;
+}
