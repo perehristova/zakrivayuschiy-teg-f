@@ -296,8 +296,12 @@ button:focus,
 }
 
 .pop-up__window[open] {
-    padding: 30px clamp(28px, calc(40px - 12 * (100vw - 375px) / 1065), 40px);
+    padding-top: 30px;
+    padding-bottom: 28px;
+    padding-left: clamp(30px, calc(40px - 10 * (100vw - 375px) / 1065), 40px);
+    padding-right: clamp(30px, calc(40px - 10 * (100vw - 375px) / 1065), 40px);
     inline-size: 357px;
+    border: var(--border-settings);
 }
 
 .pop-up__window[open] .pop-up__window_floppy {
@@ -314,10 +318,11 @@ button:focus,
     line-height: 150%;
     text-align: start;
     text-transform: uppercase;
+    max-inline-size: 234px;
 }
 
 .pop-up__window_button {
-    inline-size: clamp(255px, calc(255px + 38 * (100vw - 375px) / 1065), 293px);
+    inline-size: clamp(257px, calc(257px + 36 * (100vw - 375px) / 1065), 293px);
     block-size: 38px;
 }
 
@@ -342,8 +347,9 @@ button:focus,
         width: 28px;
         height: 28px;
     }
-    
+
     .pop-up__window[open] {
         min-inline-size: 341px;
+        padding: 30px clamp(28px, calc(40px - 12 * (100vw - 375px) / 1065), 40px);
 }
 }
